@@ -1,14 +1,15 @@
 import React from "react"
 import Header from "./header"
 import "../styles/main.scss"
+import Menu from "./menu"
+
 const Layout = ({ children }) => (
   <>
     <Header />
-    <main>{children}</main>
-    <footer>
-      © {new Date().getFullYear()}, Built with
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </footer>
+    <main className="primary">
+      <Menu />
+      {children}
+    </main>
   </>
 )
 
