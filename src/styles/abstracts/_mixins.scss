@@ -1,3 +1,14 @@
+@mixin paragraph {
+  color: $headerWhite;
+  text-shadow: 2px 2px black;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  a {
+    text-decoration: underline;
+    color: $headerWhite;
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint==phone {
     @media only screen and (max-width: 37.5em) {
