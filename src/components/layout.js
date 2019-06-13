@@ -2,11 +2,11 @@ import React from "react"
 import Header from "./header"
 import "../styles/main.scss"
 import Menu from "./menu"
-
+// '../images/'
 const Layout = ({ children }) => (
   <>
-    <Header />
     <main className="primary">
+      <Header />
       <Menu />
       {children}
     </main>

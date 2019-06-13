@@ -1,0 +1,33 @@
+.home {
+  display: grid;
+  &--greeting {
+    background: url("../images/ssc064.jpg") no-repeat center center / cover;
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 100vh);
+    grid-row: 2 / -1;
+    grid-column: 1;
+    &--greeting {
+      grid-row: 1;
+      grid-column: 1;
+      filter: grayscale(100%);
+      h1 {
+        color: $primaryColor;
+        text-align: center;
+        background: $headerWhite;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        border-radius: 10rem;
+        padding: 5px 0;
+        box-shadow: 5px 5px $primaryColor;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

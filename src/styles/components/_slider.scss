@@ -1,12 +1,12 @@
 .bm-burger-button {
-  position: fixed;
-  width: 25px;
-  height: 15px;
-  left: 18px;
-  top: 18px;
   display: none;
   @include respond(phone) {
     display: block;
+    position: fixed;
+    width: 25px;
+    height: 15px;
+    left: 18px;
+    top: 18px;
   }
 }
 
