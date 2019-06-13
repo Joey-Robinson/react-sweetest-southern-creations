@@ -8,7 +8,7 @@
     grid-column: 1;
     font-weight: 700;
     &--greeting {
-      background: url("../images/ssc064banner.jpg") no-repeat center center /
+      background: url("../static/ssc064banner.jpg") no-repeat center center /
         cover;
       grid-row: 1;
       grid-column: 1;
@@ -72,7 +72,7 @@
     &--purchasing {
       grid-row: 3;
       grid-column: 1;
-      background: url("../images/ssc041banner.jpg") no-repeat center center /
+      background: url("../static/ssc041banner.jpg") no-repeat center center /
         cover;
       h1 {
         font-size: 2.3rem;

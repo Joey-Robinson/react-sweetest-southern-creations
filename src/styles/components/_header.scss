@@ -9,7 +9,6 @@
     grid-template-columns: 5rem 1fr;
     height: 8vh;
     grid-row: 1;
-    font-size: 2rem;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -18,6 +17,9 @@
       display: inline-block;
       align-self: center;
       padding: 1rem 0;
+      h1 {
+        font-size: 2.3rem;
+      }
       a {
         align-self: center;
         color: $headerWhite;

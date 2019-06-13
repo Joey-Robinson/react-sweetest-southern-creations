@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ctabanner from "../images/ssc046banner.jpg"
+import ctabanner from "../static/ssc046banner.jpg"
 import { Link } from "gatsby"
 
 const IndexPage = () => (
@@ -34,7 +34,7 @@ const IndexPage = () => (
           continued support of local companies and businesses.
         </p>
         <div className="home--cta__image">
-          <a href={ctabanner} target="_blank" rel="noopener norferrer">
+          <a href={ctabanner} target="_blank" rel="noopener noreferrer">
             <img src={ctabanner} alt="Baby" />
           </a>
         </div>
@@ -47,7 +47,11 @@ const IndexPage = () => (
             Contact us through email
           </a>{" "}
           or &nbsp;
-          <a href="https://facebook.com/sweetestsoutherncreations/">
+          <a
+            href="https://facebook.com/sweetestsoutherncreations/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             on our Facebook page.
           </a>{" "}
           You can view some of our work{" "}
