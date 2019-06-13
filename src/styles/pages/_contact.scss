@@ -2,9 +2,86 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  a {
+    color: $headerWhite;
+  }
   background: url("../images/ssc064banner.jpg") no-repeat center center / cover;
   @include respond(phone) {
     grid-column: 1;
     grid-row: 2;
+    grid-template-rows: 1fr repeat(4, 5rem) 3fr;
+    h1 {
+      background: $headerWhite;
+      border-radius: 10rem;
+      box-shadow: 5px 5px $primaryColor;
+      color: $primaryColor;
+      display: block;
+      font-size: 2.3rem;
+      height: 35%;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 3rem;
+      transition: all 0.3s ease-in-out;
+      width: 50%;
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        width: 90%;
+      }
+    }
+
+    div {
+      font-size: 4rem;
+      display: block;
+    }
+    svg {
+      font-size: 4rem;
+    }
+    &--fb {
+      width: 50%;
+      grid-row: 2;
+      margin: 30rem 0;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      svg {
+        background: $headerWhite;
+        border-radius: 100%;
+        padding: 5px;
+        color: #3c5a99;
+      }
+    }
+    &--ig {
+      grid-row: 3;
+      align-self: center;
+      justify-self: center;
+      svg {
+        background: $headerWhite;
+        padding: 5px;
+        border-radius: 5rem;
+        color: #833ab4;
+      }
+    }
+    &--pint {
+      grid-row: 4;
+      align-self: center;
+      justify-self: center;
+      svg {
+        background: $headerWhite;
+        border-radius: 10rem;
+        padding: 5px;
+        color: #bd081c;
+      }
+    }
+    &--email {
+      grid-row: 5;
+      align-self: center;
+      justify-self: center;
+      svg {
+        background: $headerWhite;
+        border-radius: 100%;
+        padding: 5px;
+        color: #db4437;
+      }
+    }
   }
 }
