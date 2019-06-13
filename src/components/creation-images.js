@@ -10,8 +10,11 @@ const CreationImages = () => (
           edges {
             node {
               id
+              fixed {
+                src
+              }
               fluid {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -19,11 +22,15 @@ const CreationImages = () => (
       }
     `}
     render={data => (
-      <div>
+      <ul>
         {data.allImageSharp.edges.map(edge => (
-          <Img fluid={edge.node.fluid} />
+          <li key={edge.node.id}>
+            <a href={edge.node.fixed.src}>
+              <Img fluid={edge.node.fluid} />
+            </a>
+          </li>
         ))}
-      </div>
+      </ul>
     )}
   />
 )
