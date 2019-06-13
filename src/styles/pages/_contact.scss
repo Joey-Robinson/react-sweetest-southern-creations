@@ -83,5 +83,16 @@
         color: #db4437;
       }
     }
+    &--bottom {
+      grid-column: 1;
+      grid-row: 6;
+      color: $headerWhite;
+      align-self: center;
+      p {
+        hyphens: auto;
+        padding: 1.5rem 3rem;
+        font-size: 2rem;
+      }
+    }
   }
 }

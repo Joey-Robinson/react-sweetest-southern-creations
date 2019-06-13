@@ -47,6 +47,13 @@ const Contact = () => (
           <FaGoogle aria-label="Gmail" />
         </a>
       </div>
+      <div className="contact--bottom">
+        <p>
+          Feel free to contact us with any of the above mentioned methods. We're
+          quick to respond and talk about design ideas or shipping informaiton
+          and everything inbetween.
+        </p>
+      </div>
     </section>
   </Layout>
 )
