@@ -1,12 +1,19 @@
 import React from "react"
-import { slide as Slider } from "react-burger-menu"
+import { fallDown as Slider } from "react-burger-menu"
+import { Link } from "gatsby"
 
 const Menu = () => (
   <Slider>
     <ul>
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/creations/">Creations</Link>
+      </li>
+      <li>
+        <Link to="/contact/">Contact</Link>
+      </li>
     </ul>
   </Slider>
 )

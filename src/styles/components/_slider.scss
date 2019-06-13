@@ -11,7 +11,7 @@
 }
 
 .bm-burger-bars {
-  background: white;
+  background: $headerWhite;
 }
 
 .bm-cross-button {
@@ -42,7 +42,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 1fr;
+    grid-template-rows: 8vh 1fr 2fr;
   }
 }
 
@@ -55,10 +55,24 @@
   padding: 0.8em;
   grid-column: 1;
   grid-row: 2;
+  a {
+    color: $headerWhite;
+  }
+  @include respond(phone) {
+    font-size: 4rem;
+    justify-self: center;
+    align-self: center;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .bm-item {
   display: inline-block;
+  @include respond(phone) {
+    padding: 4rem 0;
+  }
 }
 
 .bm-overlay {
