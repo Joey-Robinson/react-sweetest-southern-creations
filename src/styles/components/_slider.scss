@@ -51,19 +51,22 @@
 }
 
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+  color: $primaryColor;
   grid-column: 1;
   grid-row: 2;
   a {
     color: $headerWhite;
   }
   @include respond(phone) {
+    padding: 1.5rem;
     font-size: 4rem;
     justify-self: center;
     align-self: center;
-    a:hover {
-      text-decoration: underline;
+    a {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
