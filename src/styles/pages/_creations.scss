@@ -1,7 +1,7 @@
 .creations {
+  display: grid;
   @include respond(phone) {
     grid-column: 1;
     grid-row: 2 / -1;
-    display: grid;
   }
 }
