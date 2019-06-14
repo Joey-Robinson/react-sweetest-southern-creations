@@ -22,7 +22,7 @@ const CreationImages = () => (
       }
     `}
     render={data => (
-      <ul>
+      <ul className="creations--list">
         {data.allImageSharp.edges.map(edge => (
           <li key={edge.node.id}>
             <a href={edge.node.fixed.src}>

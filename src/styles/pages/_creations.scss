@@ -1,5 +1,11 @@
 .creations {
   display: grid;
+  grid-template-columns: 5vw 90vw 5vw;
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+  &--list {
+    grid-column: 2;
+  }
   @include respond(phone) {
     grid-column: 1;
     grid-row: 2 / -1;
@@ -8,6 +14,4 @@
 
 .gatsby-image-wrapper {
   display: block;
-  // width: 100vw;
-  // height: 100vh;
 }
