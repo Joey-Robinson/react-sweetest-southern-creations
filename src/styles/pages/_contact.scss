@@ -2,6 +2,78 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+  height: 92vh;
+  div {
+    justify-self: center;
+    font-size: 4rem;
+    display: block;
+  }
+  &--fb {
+    svg {
+      background: $headerWhite;
+      border-radius: 100%;
+      padding: 5px;
+      color: #3c5a99;
+    }
+  }
+  &--ig {
+    svg {
+      background: $headerWhite;
+      padding: 5px;
+      border-radius: 5rem;
+      color: #833ab4;
+    }
+  }
+  &--pint {
+    svg {
+      background: $headerWhite;
+      border-radius: 10rem;
+      padding: 5px;
+      color: #bd081c;
+    }
+  }
+  &--email {
+    svg {
+      background: $headerWhite;
+      border-radius: 100%;
+      padding: 5px;
+      color: #db4437;
+    }
+  }
+  &--bottom {
+    grid-column: 1;
+    grid-row: 6;
+    color: $headerWhite;
+    align-self: center;
+    p {
+      hyphens: auto;
+      padding: 1.5rem 6rem;
+      font-size: 4rem;
+    }
+  }
+
+  h1 {
+    background: $headerWhite;
+    border-radius: 10rem;
+    box-shadow: 5px 5px $primaryColor;
+    color: $primaryColor;
+    display: block;
+    font-size: 5rem;
+    height: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4.5rem;
+    padding: 0 1.5rem;
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      width: 90%;
+    }
+  }
+
   a {
     color: $headerWhite;
   }
@@ -40,7 +112,6 @@
     &--fb {
       width: 50%;
       grid-row: 2;
-      margin: 30rem 0;
       text-align: center;
       align-self: center;
       justify-self: center;
