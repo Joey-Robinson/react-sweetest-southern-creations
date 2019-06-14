@@ -2,6 +2,41 @@
   background: $primaryColor;
   color: $headerWhite;
   display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  height: 8vh;
+  grid-template-columns: 2fr 1fr;
+  &--nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    [aria-current="page"] {
+      text-decoration: underline;
+    }
+
+    @include respond(tabPort) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+    &__home,
+    &__creations,
+    &__contact {
+      align-self: center;
+      font-size: 3rem;
+      justify-self: center;
+      padding: 0 1.5rem;
+    }
+  }
+  &--link {
+    grid-column: 1;
+    align-self: center;
+    padding: 0 3rem;
+    font-size: 2rem;
+  }
+  a {
+    color: $headerWhite;
+  }
   @include respond(tabPort) {
     z-index: 3;
     width: 100vw;

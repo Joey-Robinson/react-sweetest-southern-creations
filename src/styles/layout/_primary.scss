@@ -1,5 +1,8 @@
 .primary {
   display: grid;
+  grid-template-rows: 8vh;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
   @include respond(tabPort) {
     overflow: hidden;
     grid-template-columns: 1fr;

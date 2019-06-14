@@ -42,20 +42,23 @@
 }
 
 .bm-menu-wrap {
+  display: none;
   background: $primaryColor;
   width: 100%;
 }
 
 .bm-menu {
   background: $primaryColor;
-  display: grid;
   height: 100vh;
+  display: none;
   @include respond(tabPort) {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8vh repeat(3, 1fr) 2fr;
     width: 80vw;
   }
   @include respond(phone) {
+    display: grid;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 8vh 1fr 2fr;
