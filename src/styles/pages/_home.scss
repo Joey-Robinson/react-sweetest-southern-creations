@@ -1,5 +1,117 @@
 .home {
   display: grid;
+  &--greeting {
+    background: url("../static/ssc064banner.jpg") no-repeat center center /
+      cover;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  &--purchasing {
+    background: url("../static/ssc041banner.jpg") no-repeat center center /
+      cover;
+  }
+  @include respond(tabPort) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 75vh 130vh 55vh;
+    grid-row: 2 / -1;
+    grid-column: 1;
+    font-weight: 700;
+    &--greeting {
+      grid-column: 1;
+      grid-row: 1;
+      h1 {
+        font-size: 2.3rem;
+        color: $primaryColor;
+        text-align: center;
+        background: $headerWhite;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 3.5rem;
+        border-radius: 10rem;
+        padding: 5px 0;
+        box-shadow: 5px 5px $primaryColor;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          width: 90%;
+        }
+      }
+      p {
+        text-shadow: 2px 2px black;
+        color: $headerWhite;
+        font-size: 3.2rem;
+        padding: 1.5rem 3rem;
+        align-self: center;
+      }
+    }
+    &--cta {
+      grid-row: 2;
+      grid-column: 1;
+      &__image {
+        margin-top: 1.5rem;
+        img {
+          margin: 0 auto;
+          display: block;
+          width: 90%;
+          height: 75%;
+          justify-self: center;
+        }
+      }
+      h1 {
+        font-size: 2.3rem;
+        color: $headerWhite;
+        text-align: center;
+        background: $primaryColor;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 4.5rem;
+        border-radius: 10rem;
+        padding: 5px 0;
+        box-shadow: 5px 5px $headerWhite;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          width: 90%;
+        }
+      }
+      p {
+        color: $primaryColor;
+        font-size: 3.2rem;
+        padding: 1.5rem 3rem;
+      }
+    }
+    &--purchasing {
+      grid-row: 3;
+      grid-column: 1;
+      h1 {
+        font-size: 2.3rem;
+        color: $primaryColor;
+        text-align: center;
+        background: $headerWhite;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 4.5rem;
+        border-radius: 10rem;
+        padding: 5px 0;
+        box-shadow: 5px 5px $primaryColor;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          width: 90%;
+        }
+      }
+      p {
+        text-shadow: 2px 2px black;
+        color: $headerWhite;
+        font-size: 3.2rem;
+        padding: 1.5rem 3rem;
+        a {
+          text-decoration: underline;
+          color: $headerWhite;
+        }
+      }
+    }
+  }
 
   @include respond(phone) {
     grid-template-columns: 1fr;
@@ -8,8 +120,6 @@
     grid-column: 1;
     font-weight: 700;
     &--greeting {
-      background: url("../static/ssc064banner.jpg") no-repeat center center /
-        cover;
       grid-row: 1;
       grid-column: 1;
       h1 {
@@ -72,8 +182,6 @@
     &--purchasing {
       grid-row: 3;
       grid-column: 1;
-      background: url("../static/ssc041banner.jpg") no-repeat center center /
-        cover;
       h1 {
         font-size: 2.3rem;
         color: $primaryColor;
